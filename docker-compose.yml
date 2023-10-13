@@ -4,6 +4,8 @@
     image: frontend:1.1
     build:
       context: ./frontend/
+    ports:
+      - "3000:3000"
   basckend:
     image: backend:1.1
     build:
