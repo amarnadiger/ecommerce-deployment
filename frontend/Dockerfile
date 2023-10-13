@@ -1,13 +1,7 @@
-# Use an official Node.js runtime as a parent image
-FROM node:14
-# Set the working directory in the container
-WORKDIR /usr/src/app/frontend
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
-# Install the application dependencies
-RUN npm install
-COPY . .
-RUN npm run build
-# Define the command to run your application
+FROM node:14 #base image 
+WORKDIR /usr/src/app/frontend #setting the directory 
+COPY package*.json ./ #copying dependency files
+RUN npm install # Installing dependencies
+COPY . . copy source code related to frontend
 CMD ["npm", "start"]
 
