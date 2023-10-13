@@ -6,7 +6,7 @@ WORKDIR /usr/src/app/backend
 COPY package*.json ./
 # Install the application dependencies
 RUN npm install
-COPY backend ./
+COPY ./backend ./
 # Define the command to run your application
 CMD ["npm", "start"]
 
