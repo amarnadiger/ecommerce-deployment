@@ -1,13 +1,7 @@
-# Use an official Node.js runtime as a parent image
 FROM node:14
-# Set the working directory in the container
-WORKDIR /usr/src/app/backend
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
-# Install the application dependencies
-RUN npm install
-COPY . .
-RUN npm run build
-# Define the command to run your application
+WORKDIR /usr/src/app/backend #Setting directories
+COPY package*.json ./ #copying json files which contains dependencies 
+RUN npm install #installing the dependencies
+COPY . .  #cpoying the entire source code which is related to backend
 CMD ["npm", "start"]
 
