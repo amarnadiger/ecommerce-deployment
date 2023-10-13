@@ -6,7 +6,7 @@ WORKDIR /usr/src/app/frontend
 COPY package*.json ./
 # Install the application dependencies
 RUN npm install
-COPY ./ ./
+COPY . .
 # Define the command to run your application
 CMD ["npm", "start"]
 
