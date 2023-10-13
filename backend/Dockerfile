@@ -3,7 +3,7 @@ FROM node:14
 # Set the working directory in the container
 WORKDIR /usr/src/app/backend
 # Copy package.json and package-lock.json to the working directory
-COPY backend/package*.json ./
+COPY package*.json ./
 # Install the application dependencies
 RUN npm install
 # Define the command to run your application
