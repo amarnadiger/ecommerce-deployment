@@ -7,7 +7,7 @@
     ports:
       - "3000:3000"
   basckend:
-    image: backend:1.0
+    image: backend:1.1
     build:
       context: ./backend/
     ports:
