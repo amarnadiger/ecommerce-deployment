@@ -7,6 +7,7 @@ COPY /backend/package*.json ./
 # Install the application dependencies
 RUN npm install
 
+COPY backend ./
 # Define the command to run your application
 CMD ["npm", "start"]
 
