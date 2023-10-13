@@ -4,12 +4,19 @@
     image: frontend:1.1
     build:
       context: ./frontend/
-  basckend:
+  backend:
     image: backend:1.1
     build:
       context: ./backend/
+    environment:
+      DATABASE_URL: mongodb+srv://amarnadagera01:tbERyf7jKVCeCwpV@cluster0.t3nrpbk.mongodb.net/?retryWrites=true&w=majority
+    depends_on:
+      - mongo 
     ports:
       - "3001:5000"
+  mongo:
+    image: mongo:latest
+      
 
     
 
