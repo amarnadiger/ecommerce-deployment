@@ -4,6 +4,8 @@
     image: frontend:1.4
     build:
       context: ./frontend/
+    ports:
+      - "3000:3000" 
   backend:
     image: backend:1.4
     build:
@@ -14,8 +16,6 @@
       - mongo 
     ports:
       - "3001:5000"
-  mongo:
-    image: mongo:latest
       
 
     
