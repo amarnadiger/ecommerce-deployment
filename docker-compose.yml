@@ -6,14 +6,6 @@
       context: ./frontend/
     ports:
       - "3000:3000" 
-  backend:
-    image: backend:1.4
-    build:
-      context: ./backend/
-    environment:
-      DATABASE_URL: mongodb+srv://amarnadagera01:tbERyf7jKVCeCwpV@cluster0.t3nrpbk.mongodb.net/nodejs?retryWrites=true&w=majority
-    ports:
-      - "3001:5000"
       
 
     
