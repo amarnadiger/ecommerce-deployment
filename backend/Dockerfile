@@ -1,4 +1,4 @@
-FROM mongo:5.9.18
+FROM mongo:5
 WORKDIR /usr/src/app/backend 
 COPY package*.json ./  
 RUN npm install 
