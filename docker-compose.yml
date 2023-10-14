@@ -11,7 +11,7 @@
     build:
       context: ./backend/
     environment:
-      DATABASE_URL: mongodb+srv://amarnadagera01:tbERyf7jKVCeCwpV@cluster0.t3nrpbk.mongodb.net/?retryWrites=true&w=majority
+      DATABASE_URL: mongodb+srv://amarnadagera01:tbERyf7jKVCeCwpV@cluster0.t3nrpbk.mongodb.net/nodejs?retryWrites=true&w=majority
     depends_on:
       - mongo 
     ports:
