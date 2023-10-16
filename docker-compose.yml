@@ -22,12 +22,7 @@ services:
     image: mongo:5
     hostname: nodejs
     environment:
-      -MONGO_INITDB_ROOT_USERNAME=amarnadagera01
-      -MONGO_INITDB_ROOT_PASSWORD=tbERyf7jKVCeCwpV
+      - MONGO_INITDB_ROOT_USERNAME=amarnadagera01
+      - MONGO_INITDB_ROOT_PASSWORD=tbERyf7jKVCeCwpV
     ports:
       - "27017:27017"
-
-      
-
-    
-
