@@ -19,6 +19,8 @@ services:
       - "3001:5000"
   mongo:
     image: mongo_image:5
+    build: .
+    hostname: nodejs
     environment:
       - MONGO_INITDB_ROOT_USERNAME=amarnadagera01
       - MONGO_INITDB_ROOT_PASSWORD=tbERyf7jKVCeCwpV
