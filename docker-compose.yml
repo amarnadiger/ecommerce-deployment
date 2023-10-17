@@ -18,8 +18,7 @@ services:
     ports:
       - "3001:5000"
   mongo:
-    image: mongo:5
-    name: database:1.0
+    image: mongo_image:5
     hostname: nodejs
     environment:
       - MONGO_INITDB_ROOT_USERNAME=amarnadagera01
